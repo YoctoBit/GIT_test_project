@@ -8,7 +8,7 @@ print ('
 <meta charset="utf-8">
 <meta name="keywords" content="GIT, гит, система контроля версий">
 <meta name="description" content="Проект в котором я тренируюсь работать с системой 
-контроля версий GIT"
+контроля версий GIT">
 </head>
 <body>
 <H1>ПРИВЕТ ДРУЗЬЯ!</H1>
@@ -17,11 +17,13 @@ print ('
 </html>
 ');
 print ('hello   world');
-print ('<ol>
+print ('
+<div class="feature-kitten">
+<ol>
   <li>Я первый и только первый пункт</li>
   <li>Я не я, если я не второй пункт</li>
   <li>Третий после стольких лет? Всегда!</li>
-</ol>');
+</ol></div>');
 print ('&ltНовая строка в которой будут изминения для конфликта в пулреквест на GitHub&gt<br>');
 print ('Он взглянул в окно и подумал — <i>такого просто не может быть</i>!<br>');
 print ('новая строка в которой будут изминения для Enother_branch ветки<br>');
@@ -46,3 +48,18 @@ print ('новый коммит от kryptologins_branch<br>');
 print ('Ссылка на <a href="/DelitedFile.php">DelitedFile</a> <br>');
 print ('Ссылка на <a href="/hello_GIT.php">hello_GIT</a> <br>');
 print ('Ссылка на <a href="/newList.php">newList_GIT</a> <br>');
+print ('<section><div class="new"><button class="button">Нажми на меня</button></div></section>
+');
+?>
+<script defer>
+let buttona = document.querySelector('.button');
+let i = 0;
+
+// button.innerText = 'Кнопка нажата' + i + 'раз';
+console.log(buttona);
+console.log(i);
+buttona.onclick = function() {
+    console.log(' Кнопка нажата! ');
+    i++;
+    buttona.textContent = 'Кнопка нажата ' + i + ' раз';
+}</script>

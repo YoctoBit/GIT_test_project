@@ -2,11 +2,13 @@ body {
      color: darkslateblue;
      text-decoration-color: red;
      font-size: 18px;
+    line-height: .9em;
      padding: 17px;
  }
 p {
     color: red;
     font-size: 28px;
+    text-align: center;
 }
 span {
     color: darkmagenta;
@@ -27,4 +29,18 @@ eqwder {
     font-size: 22px;
     padding-bottom: 17px;
     padding-left: 25px;
+}
+.feature-kitten {
+    padding-top: 60px;                        /* отступ сверху */
+    background-image: url("../img/bottle.jpg");  /* фоновая картинка */
+}
+
+.button {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border: 3px yellow solid;
+}
+.new {
+    text-align: center;
 }
