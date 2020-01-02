@@ -1,10 +1,11 @@
 <?php
 print ('
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <title>Тестовый проект для тренировки работы с GIT</title>
 <link href="CSS/style.css" rel="stylesheet">
+<link href="img/favicon-2.png" rel="icon">
 <meta charset="utf-8">
 <meta name="keywords" content="GIT, гит, система контроля версий">
 <meta name="description" content="Проект в котором я тренируюсь работать с системой 
@@ -50,16 +51,51 @@ print ('Ссылка на <a href="/hello_GIT.php">hello_GIT</a> <br>');
 print ('Ссылка на <a href="/newList.php">newList_GIT</a> <br>');
 print ('<section><div class="new"><button class="button">Нажми на меня</button></div></section>
 ');
+print ('<section><div class="sum new"><button class="button">Нажми на меня</button></div></section>
+');
 ?>
 <script defer>
-let buttona = document.querySelector('.button');
+let button = document.querySelector('.button');
 let i = 0;
 
 // button.innerText = 'Кнопка нажата' + i + 'раз';
-console.log(buttona);
-console.log(i);
-buttona.onclick = function() {
-    console.log(' Кнопка нажата! ');
+
+button.onclick = function() {
     i++;
-    buttona.textContent = 'Кнопка нажата ' + i + ' раз';
+        if (i > 10) {
+            for (let y = 0; y <= 1000000; y++){
+            button.textContent = 'сейчас у нас ' + y + "времени";
+            }
+        }
+
+    else {button.textContent = 'Кнопка нажата ' + i + ' раз';}
+
+
+var s = 2392013;
+window.onload=function(){
+setInterval(function(){
+s-=1;
+document.getElementById("sum").children[0].innerHTML=s;
+},1000)
+}
 }</script>
+<svg height='200' width='150'>
+    <rect fill='orange' height='100' width='150'></rect>
+    <polygon points="70,5 90,41 136,48 103,80 111,126 70,105 29,126 36,80 5,48 48,41"fill="red"/>
+</svg>
+<svg>
+    <circle r="10" cx="50" cy="50%" fill="crimson"/>
+    <circle r="30" cx="105" cy="50%" fill="orangered"/>
+    <circle r="50" cx="200" cy="50%" fill="gold"/>
+</svg>
+<svg width="300" height="290">
+    <rect class="sky" width="100%" fill="skyblue" />
+    <rect class="sod" width="100%" y="180" fill="yellowgreen" />
+    <rect class="leg" width="10" height="30" rx="5" x="80" y="230" fill="black" />
+    <rect class="leg" width="10" height="30" rx="5" x="210" y="230" fill="black" />
+    <circle class="target" r="100" cx="50%" cy="160" fill="crimson" />
+    <circle class="target" r="80" cx="50%" cy="160" fill="white" />
+    <circle class="target" r="60" cx="50%" cy="160" fill="crimson" />
+    <circle class="target" r="40" cx="50%" cy="160" fill="white" />
+    <circle class="target" r="20" cx="50%" cy="160" fill="crimson" />
+</svg>
