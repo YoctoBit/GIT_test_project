@@ -44,3 +44,6 @@ eqwder {
 .new {
     text-align: center;
 }
+svg {
+    border: darkmagenta 2px solid;
+}
